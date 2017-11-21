@@ -1,2 +1,5 @@
 com\kgc\hadoop\HDFSApp$1.class
+com\kgc\hadoop\ZKApp.class
+com\kgc\hadoop\HBaseApp.class
+com\kgc\hadoop\ZKApp$1.class
 com\kgc\hadoop\HDFSApp.class

@@ -14,6 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <hadoop.version>2.6.0-cdh5.7.0</hadoop.version>
         <zookeeper.version>3.4.5-cdh5.7.0</zookeeper.version>
+        <hbase.version>1.2.0-cdh5.7.0</hbase.version>
     </properties>
 
     <repositories>
@@ -34,6 +35,18 @@
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
             <version>${zookeeper.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-client</artifactId>
+            <version>${hbase.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-server</artifactId>
+            <version>${hbase.version}</version>
         </dependency>
 
         <dependency>
@@ -58,16 +71,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <useUniqueVersions>false</useUniqueVersions>
-                            <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.kgc.hadoop.hdfs.LogGenerator</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
             </plugin>
         </plugins>
     </build>

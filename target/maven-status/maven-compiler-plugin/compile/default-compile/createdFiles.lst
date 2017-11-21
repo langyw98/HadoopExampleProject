@@ -1,1 +1,4 @@
 com\kgc\hadoop\hdfs\LogGenerator.class
+com\kgc\hadoop\hbase\CopyHbaseTableApp.class
+com\kgc\hadoop\hbase\CopyHbaseTableApp$MyReduce.class
+com\kgc\hadoop\hbase\CopyHbaseTableApp$MyMapper.class
